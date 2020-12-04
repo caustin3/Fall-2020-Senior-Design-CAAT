@@ -1,0 +1,36 @@
+
+Task Management Description
+Team CAAT
+12/6/2020
+
+Responsibilities and Roles:
+
+Chase Austin - Team leader:
+ Communicate Paper Researcher
+ Facilitate meetings 
+ Help with all the programming????
+
+Addison Dugal - Algorithm adapting:
+programming the algorithm and the back end of the add-on
+converting data structures and file types used in the original code to work with ones used in Blender such as .obj
+
+Alex Finch - User interface/Blender Add-on Design:
+ programming user interface.
+
+
+
+Thomas Wise - Backend Programmer:
+Connecting and adapting the algorithms to the User interface
+Converting between data types
+
+
+
+
+Team Commitment Agreement:
+The members of Team CAAT all agree to dedicate and apply ourselves to this group project, to work together and try our best at implementing the best possible final product based on the project as defined. We will all work to our assigned tasks as best as possible, and assist teammates as we are able when they need it. Our final outcome is indicative of all of our abilities as computer science students, as well as our abilities to work together as teammates.
+
+
+Chase Austin:---:CWA
+Addison Dugal:---:AED
+Alexander Finch:---:ACF
+Thomas Wise:---:TJW
