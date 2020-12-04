@@ -1,0 +1,35 @@
+Project Description
+Team CAAT
+12/6/2020
+
+Summary:
+Our project is based on a paper by Joshuah Wolper that introduces algorithms for realistically animating and rendering damage to anisotropic materials such as meat, wood, or bone. Our goal is to create an application or add-on for an animating software like Blender that allows users to animate and view this damage on their own objects without needing to understand the complex algorithms at work.
+
+
+Goals:
+
+Short term Goals
+
+Learn to use and work with Blender, gaining a familiarity with the software and the process of creating add-ons and assets
+Start implementing the algorithms in code
+Determine method of content delivery of algorithms - choosing if this will be an add-on, a type of asset such as an animation procedure, or something else entirely
+To have a functioning animation that allows a block of a material to be torn using the algorithms discussed in the AnisoMPM paper but having that animation be constructed in blender.
+
+Long term Goals
+
+Fully develop the add-on so that the end users can run simulations as simply and easily as possible.
+Allow the users to design a 3D model, specify what movement is being made (where it’s being pulled on, cut into, etc.) and run the simulation without leaving Blender.
+Allow the users to also add more details if they desire.
+It should be easy to use, but they should also be able to specify what parts of the model are what material, what they want 
+To save from the simulation (video animation, frame by frame models, or just the end result), and other features that may be useful.
+
+
+
+
+Milestones:
+Getting the code from Joshua’s paper to work on Windows (the original code is designed for GNU)
+Getting a simple version of the add-on made. This should just be able to take a simple cube of a single material and tear it in one direction. User interface only needs to accompany us at this point.
+Improve the user interface of the add-on. Allow users to import a 3D model to be torn
+Implement more customizability for the simulations. Allow users to specify what material the objects are made out of and where it is being torn/cut from
+Implement more customizability for how to save results (just a video, frame by frame models, just the end result, etc.)
+Add any more features that animators may find useful.
