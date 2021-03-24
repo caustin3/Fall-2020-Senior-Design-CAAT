@@ -8,10 +8,19 @@ parser.add_option("-m", "--mesh", dest="mesh",
                   help="The name of the desired mesh file");
 parser.add_option("-o", "--output", dest="output",
                   help="The name of the header file being generated")
+parser.add_option("-e", "--endFrame", dest="endFrame", default="160",
+                  help="The amount of frames to be generated")
+parser.add_option("-r", "--frameRate", dest="frameRate", default="24",
+                  help="The amount of frames per second")
+parser.add_option("-g", "--gravity", dest="gravity",
+                  help="The gravity rate")
 
 (options, args) = parser.parse_args();
 mesh = options.mesh;
 output = options.output;
+endFrame = options.endFrame;
+frameRate = options.frameRate;
+gravity = options.gravity;
                   
 
 f = open(output, "w+", newline = "\n");
@@ -29,10 +38,10 @@ f.write('//percent = 0.19\n')
 f.write('//eta = 0.1\n')
 f.write('//fiberScale = 10\n')
 f.write('\n')
-f.write('sim.end_frame = 160;\n')
-f.write('T frameRate = 24;\n')
+f.write('sim.end_frame = ' + endFrame + ';\n')
+f.write('T frameRate = ' + frameRate + ';\n')
 f.write('sim.step.frame_dt = (T)1 / frameRate;\n')
-f.write('sim.gravity = -3 * TV::Unit(1);\n')
+f.write('sim.gravity = ' + gravity + ' * TV::Unit(1);\n')
 f.write('sim.step.max_dt = 2e-4; //1.5 for fanfu\n')
 f.write('sim.symplectic = true;\n')
 f.write('sim.verbose = false;\n')
