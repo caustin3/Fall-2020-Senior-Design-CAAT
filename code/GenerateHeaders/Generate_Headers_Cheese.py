@@ -12,7 +12,7 @@ parser.add_option("-e", "--endFrame", dest="endFrame", default="160",
                   help="The amount of frames to be generated")
 parser.add_option("-r", "--frameRate", dest="frameRate", default="24",
                   help="The amount of frames per second")
-parser.add_option("-g", "--gravity", dest="gravity",
+parser.add_option("-g", "--gravity", dest="gravity", default = "-9.8",
                   help="The gravity rate")
 
 (options, args) = parser.parse_args();

@@ -1,7 +1,7 @@
 import os
 
 
-sample = open("cheesePull.h")
+sample = open("boneTwist.h")
 sampleLinesTmp = sample.readlines();
 sample.close();
 sampleLines = [];
@@ -12,7 +12,7 @@ for line in sampleLinesTmp:
         tmp = tmp + line[i];
     sampleLines.append(tmp);
 
-f = open("Generate_Headers.py", "w+", newline="\n");
+f = open("Generate_Headers_Bone.py", "w+", newline="\n");
 
 for line in sampleLines:
     f.write("f.write('" + line + "\\n')\n");
