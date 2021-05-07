@@ -1,12 +1,13 @@
 import binascii
 import struct
-import hou
 
 f = open("anisoFrax_80.bgeo", 'rb');
 byteLen = 4;
 
-byteList = [];
+floatList = [];
+f.read(3);
 byte = f.read(byteLen);
+counter = 0;
 while byte:
     
     if len(byte) < byteLen:
@@ -14,12 +15,11 @@ while byte:
         break;
     [tmp] = struct.unpack('f', byte)
     #tmp = int.from_bytes(byte, byteorder="big", signed=True);
-    byteList.append(tmp);
+    floatList.append(byte);
     byte = f.read(byteLen);
     
 
 f.close();
-print(len(byteList));
 
 f = open("test.txt", "w+", newline="\n");
 for x in range(0, len(byteList)):
